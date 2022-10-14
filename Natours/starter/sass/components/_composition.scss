@@ -2,7 +2,7 @@
   position: relative;
   &__photo {
     width: 55%;
-    box-shadow: 0 1.5rem 4rem rgba($color-back, 0.4);
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
     border-radius: 2px;
     position: absolute;
     transition: all 0.5s;
@@ -26,7 +26,7 @@
       outline: 1.5rem solid $color-primary;
       transform: scale(1.1) translateY(-1rem);
       z-index: 20;
-      box-shadow: 0 2.5rem 4rem rgba($color-back, 0.5);
+      box-shadow: 0 2.5rem 4rem rgba($color-black, 0.5);
     }
   }
 }

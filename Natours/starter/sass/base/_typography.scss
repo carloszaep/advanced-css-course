@@ -43,6 +43,7 @@ body {
     $color-primary-light,
     $color-primary-dark
   );
+  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: 2px;
@@ -50,7 +51,7 @@ body {
 
   &:hover {
     transform: skewY(2deg) skewX(15deg);
-    text-shadow: 0.5rem 1rem 2rem rgba($color-back, 0.2);
+    text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
   }
 }
 
