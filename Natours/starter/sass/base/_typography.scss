@@ -13,6 +13,10 @@
     animation-timing-function: ease-out;
     /* animation-iteration-count: 3; */
     /* animation-delay: 3s; */
+    @include respond(phone) {
+      letter-spacing: 1rem;
+      font-size: 5rem;
+    }
   }
 
   &--sub {
@@ -22,6 +26,10 @@
     letter-spacing: 1.44rem;
 
     animation: moveInRight 2s ease-out;
+
+    @include respond(phone) {
+      letter-spacing: 0.5rem;
+    }
   }
 }
 
@@ -43,6 +51,15 @@ body {
     $color-primary-light,
     $color-primary-dark
   );
+
+  @include respond(tab-port) {
+    font-size: 3rem;
+  }
+
+  @include respond(phone) {
+    font-size: 2.5rem;
+  }
+
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
