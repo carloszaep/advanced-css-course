@@ -11,6 +11,12 @@
     transform: skewX(12deg);
   }
 
+  @include respond(phone) {
+    transform: skewX(0);
+    & > * {
+      transform: skewX(0);
+    }
+  }
   &__shape {
     width: 15rem;
     height: 15rem;
@@ -26,9 +32,6 @@
     height: 100%;
     transform: translateX(-4rem) scale(1.4);
     transition: all 1s;
-  }
-
-  &__text {
   }
 
   &__caption {

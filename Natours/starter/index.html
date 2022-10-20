@@ -100,12 +100,28 @@
           <div class="col-1-of-2">
             <div class="composition">
               <img
-                src="img/nat-1-large.jpg "
+                srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
                 alt=""
+                sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+                src="img/nat-1-large.jpg "
                 class="composition__photo composition__photo--p1"
               />
+              <img
+                srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w"
+                alt=""
+                sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+                src="img/nat-2-large.jpg "
+                class="composition__photo composition__photo--p2"
+              />
+              <img
+                srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w"
+                alt=""
+                sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+                src="img/nat-3-large.jpg "
+                class="composition__photo composition__photo--p3"
+              />
             </div>
-            <div class="composition">
+            <!-- <div class="composition">
               <img
                 src="img/nat-2-large.jpg"
                 alt=""
@@ -118,7 +134,7 @@
                 alt=""
                 class="composition__photo composition__photo--p3"
               />
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
@@ -421,7 +437,19 @@
 
     <footer class="footer">
       <div class="footer__logo-box">
-        <img src="img/logo-green-2x.png" alt="full-logo" class="footer__logo" />
+        <picture class="footer__logo">
+          <source
+            srcset="
+              img/logo-green-small-1x.png 1x,
+              img/logo-green-small-2x.png 2x
+            "
+            media="(max-width: 37.5em)"
+          />
+          <img
+            srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x"
+            alt="full-logo"
+          />
+        </picture>
       </div>
       <div class="row">
         <div class="col-1-of-2">

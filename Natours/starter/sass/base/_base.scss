@@ -1,5 +1,6 @@
 *::after,
-*::before {
+*::before,
+body {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
@@ -15,6 +16,9 @@ html {
   @include respond(tab-port) {
     font-size: 50%;
   }
+  @include respond(phone) {
+    font-size: 47%;
+  }
 
   @include respond(big-desktop) {
     font-size: 75%;
@@ -27,5 +31,6 @@ html {
 
   @include respond(tab-port) {
     padding: 0;
+    margin: 0 !important;
   }
 }
