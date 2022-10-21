@@ -166,10 +166,6 @@ html {
       padding: 0;
       margin: 0 !important; } }
 
-::selection {
-  background-color: #55c57a;
-  color: #ffff; }
-
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -388,7 +384,7 @@ html {
   .card__price-value {
     font-size: 6rem;
     font-weight: 100; }
-  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+  @media only screen and (max-width: 56.25em) {
     .card {
       height: auto;
       box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
@@ -760,13 +756,12 @@ html {
   cursor: pointer; }
   @media only screen and (max-width: 56.25em) {
     .navigation__button {
-      position: fixed;
-      top: 4rem;
-      right: 4rem; } }
+      top: 6rem;
+      right: 11rem; } }
   @media only screen and (max-width: 37.5em) {
     .navigation__button {
-      top: 3rem;
-      right: 3rem; } }
+      top: 6rem;
+      right: 11rem; } }
 
 .navigation__background {
   height: 6rem;
@@ -780,12 +775,12 @@ html {
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
   @media only screen and (max-width: 56.25em) {
     .navigation__background {
-      top: 3rem;
-      right: 4rem; } }
+      top: 6rem;
+      right: 11rem; } }
   @media only screen and (max-width: 37.5em) {
     .navigation__background {
-      top: 3rem;
-      right: 4rem; } }
+      top: 6rem;
+      right: 11rem; } }
 
 .navigation__nav {
   height: 100vh;
