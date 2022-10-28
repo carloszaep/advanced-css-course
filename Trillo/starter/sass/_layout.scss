@@ -5,6 +5,12 @@
   box-shadow: var(--shadow-dark);
 
   min-height: 50rem;
+
+  @include respond(tab-land) {
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+  }
 }
 
 .header {
@@ -19,6 +25,9 @@
 
 .content {
   display: flex;
+  @include respond(tab-port) {
+    flex-direction: column;
+  }
 }
 
 .sidebar {
@@ -39,11 +48,15 @@
   font-size: 1.4rem;
   display: flex;
   flex-wrap: wrap;
-
   justify-content: center;
   padding: 4.5rem;
   background-color: var(--color-grey-light-1);
   border-bottom: var(--line);
+
+  @include respond(tab-port) {
+    padding: 2rem;
+    flex-direction: column;
+  }
 }
 
 .description {
@@ -53,6 +66,10 @@
   padding: 3rem;
   margin-right: 4.5rem;
   font-size: 1.4rem;
+
+  @include respond(tab-port) {
+    margin: 2rem 0;
+  }
 }
 
 .user-reviews {
